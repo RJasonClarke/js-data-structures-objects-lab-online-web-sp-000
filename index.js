@@ -11,9 +11,9 @@ function destructivelyUpdateObjectWithKeyAndValue(driver, key, value) {
 }
 
 function deleteFromObjectByKey(driver, key) {
-  var newObj = Object.assign({}, driver);
-  delete newObj[key];
-  return newObj;
+  var newObject = Object.assign({}, driver);
+  delete newObject[key];
+  return newObject;
 }
 
 
