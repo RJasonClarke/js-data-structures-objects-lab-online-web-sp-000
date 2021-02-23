@@ -1,23 +1,23 @@
 // Write your solution in this file!
 var driver = {};
 
-function updateObjectWithKeyAndValue(object, key, value) {
-  return Object.assign({}, object, {[key]: value});
+function updateDriverWithKeyAndValue(driver, key, value) {
+  return Object.assign({}, driver, {[key]: value});
 }
 
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
-  object[key] = value;
-  return object;
+function destructivelyUpdateObjectWithKeyAndValue(driver, key, value) {
+  driver[key] = value;
+  return driver;
 }
 
-function deleteFromObjectByKey(object, key) {
-  var newObj = Object.assign({}, object);
+function deleteFromObjectByKey(driver, key) {
+  var newObj = Object.assign({}, driver);
   delete newObj[key];
   return newObj;
 }
 
 
-function destructivelyDeleteFromObjectByKey(object, key) {
-  delete object[key];
+function destructivelyDeleteFromObjectByKey(driver, key) {
+  delete driver[key];
   return object;
 }
